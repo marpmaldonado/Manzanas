@@ -1,0 +1,112 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Oswald&display=swap');
+* {margin:0; padding:0;}
+
+body{background:#fffffA;}
+
+
+
+/* estilo del header */
+header {
+	width:100%;
+	overflow: hidden;
+	background:#6c3091;
+	margin-bottom:20px;
+}
+
+.wrapper {
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;
+}
+
+header .logo {
+	color:#f2f2f2;
+	font-size:50px;
+	font-family: 'Hedvig Letters Serif', serif;
+	line-height:200px;
+	float:left;
+}
+
+header nav {
+	float:right;
+	line-height:200px;
+}
+
+header nav a {
+	display:inline-block;
+	color:#fff;
+	padding:10px 20px;
+	text-decoration:none;
+	line-height:normal;
+	font-size:20px;
+	font-family: 'Hedvig Letters Serif', serif;
+	font-weight:bold;
+	-webkit-transition: all 500ms ease;
+	-moz-transition: all 500ms ease;
+	-ms-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+header nav a:hover {
+	background:#F56F3A;
+	border-radius:50px;
+}
+
+
+/* Localidades */
+
+.card {
+    position: relative;
+    width: 615px;
+    height: 450px;
+    margin-left: 6%;
+    margin-bottom: 5%;
+    display: inline-block;
+   
+
+}
+
+.card .face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 3.5s;
+}
+
+.card .front {
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img {
+    /* position: absolute; */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .front h3 {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0,.4);
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
