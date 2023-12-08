@@ -6,6 +6,7 @@ body{background:#fffffA;}
 
 
 
+
 /* estilo del header */
 header {
 	width:100%;
@@ -54,8 +55,21 @@ header nav a:hover {
 	background:#F56F3A;
 	border-radius:50px;
 }
-
-
+.container{
+    max-width: 700px;
+    width: 100%;
+    /* padding: 45px 20px; */
+    margin: 0 auto;
+    margin-top: 50px;
+    color: #000;
+}
+.title{
+    font-size: 2rem;
+    padding: 10px;
+}
+.paragraph{
+    font-size: 1rem;
+}
 /* Localidades */
 
 .card {
@@ -99,6 +113,9 @@ header nav a:hover {
     color: #fff;
     background: rgba(0, 0, 0,.4);
     text-align: center;
+}
+footer{
+    background-color: #6c3091;
 }
 
 
