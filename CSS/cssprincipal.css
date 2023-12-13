@@ -81,8 +81,13 @@ header nav a:hover {
     margin-left: 6%;
     margin-bottom: 5%;
     display: inline-block;
-   
-
+    opacity: 1;
+}
+.card:hover{
+  opacity: 0.7;
+  /* width: 625px; */
+    /* height: 470px; */
+    transition: .2s;
 }
 
 .card .face {
@@ -116,6 +121,11 @@ header nav a:hover {
     background: rgba(0, 0, 0,.4);
     text-align: center;
 }
+.card .front h3:hover{
+  transition: .5s;
+  height: 450px;
+}
+
 footer{
     background-color: #6c3091;
 }
@@ -173,7 +183,7 @@ footer{
   
   .login-box {
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 50%;
     width: 400px;
     padding: 40px;
