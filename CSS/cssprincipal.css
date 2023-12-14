@@ -32,14 +32,23 @@ header  {
 	float:left;
 }
 header .logo{
-    
     height: 50px;
-    
+}
+header .Titulo{
+	/* background:#6c3091;
+  width: 100px; */
+  position: relative;
+  /* width: 100%; */
+  margin-left: 180px;
+  /* height: 100px; */
 }
 
 header nav {
+  position: absolute;
 	float:right;
 	line-height:200px;
+  right: 37%;
+  margin-top: -150px;
 }
 
 header nav a {
@@ -59,12 +68,15 @@ header nav a {
 }
 
 header nav a:hover {
-	background:green;
-	border-radius:50px;
+	background: green;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px green,
+                /* 0 0 25px green, */
+                /* 0 0 50px green, */
+                0 0 100px green;
 }
-.container{
-    
-}
+
 .title{
     font-size: 2rem;
     padding: 10px;
@@ -84,7 +96,7 @@ header nav a:hover {
     opacity: 1;
 }
 .card:hover{
-  opacity: 0.7;
+  opacity: 2.0;
   /* width: 625px; */
     /* height: 470px; */
     transition: .2s;
@@ -191,10 +203,20 @@ footer{
     font-family: sans-serif;
     background: linear-gradient(#141e30, #243b55);
   } */
-  
+  #docs{
+    margin-left: 150px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+  }
+  #login-box2{
+    top: 95%;
+  }
+  #mys{
+    margin-top: 20px;
+  }
   .login-box {
     position: absolute;
-    top: 70%;
+    top: 65%;
     left: 50%;
     width: 400px;
     padding: 40px;
@@ -279,7 +301,10 @@ footer{
     position: absolute;
     display: block;
   }
-  
+  p{
+    color: white;
+    font-size: 15px;
+  }
   .login-box a span:nth-child(1) {
     top: 0;
     left: -100%;
