@@ -28,29 +28,48 @@
     <!-- formulariooo -->
     <div class="login-box">
         <h2>Agregar nueva Manzana</h2>
-        <form action="/insertar">
+        <form action="/insertar" method="post">
+          
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" name="Nombre" required="">
             <label>Nombres</label>
           </div>
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" name="Localidad" required="">
             <label>Localidad</label>
           </div>
           <div class="user-box">
-            <input type="text" name="" required="">
+            <input type="text" name="Dirección" required="">
             <label>Dirección</label>
           </div>
           <div class="user-box">
-            <input type="text" name="" required="">
             <label>Municipio</label>
-          </div>
-          <a href="#">
+            <select id="municipio" name="Municipio">
+              <option value="Bogota">Bogota</option>
+              <option value="Pasto">Pasto</option>
+              <option value="Cali">Cali</option>
+              <option value="Cumaral">Cumaral</option>
+              <option value="Carlosama">Carlosama</option>
+              <option value="Cúcuta">Cúcuta</option>
+              <option value="Cartagena">Cartagena</option>
+              <option value="Pasto">Pasto</option>
+              <option value="Ibagué">Ibagué</option>
+              <option value="Concepción">Concepción</option>
+              <option value="Campamento">Campamento</option>
+              <option value="Cucutilla">Cucutilla</option>
+              <option value="Chimichagua">Chimichagua</option>
+              <option value="Cicuco">Cicuco</option>
+              <option value="Caucasia">Caucasia</option>
+              <option value="Concordia">Concordia</option>
+          </select>
+          <br>
+            <button>
+              agregar
+            </button>
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Agregar
           </a>
         </form>
       </div>

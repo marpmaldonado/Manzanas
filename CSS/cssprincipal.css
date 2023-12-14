@@ -1,5 +1,4 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Oswald&display=swap');
 * {margin:0; padding:0;}
 
 body{background:#fffffA;}
@@ -208,6 +207,9 @@ footer{
     margin-top: 10px;
     margin-bottom: 25px;
   }
+  #municipio{
+    margin-top: 20%;
+  }
   #login-box2{
     top: 95%;
   }
@@ -286,7 +288,29 @@ footer{
     margin-top: 40px;
     letter-spacing: 4px
   }
-  
+  button{
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 40px;
+    letter-spacing: 4px
+  }
+  button:hover{
+    background: #6c3091;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #6c3091,
+                0 0 25px #6c3091,
+                0 0 50px #6c3091,
+                0 0 100px #6c3091;
+
+  }
   .login-box a:hover {
     background: #6c3091;
     color: #fff;
@@ -323,7 +347,7 @@ footer{
     }
   }
   
-  .login-box a span:nth-child(2) {
+  .login-box button span:nth-child(2) {
     top: -100%;
     right: 0;
     width: 2px;
@@ -342,7 +366,7 @@ footer{
     }
   }
   
-  .login-box a span:nth-child(3) {
+  .login-box button span:nth-child(3) {
     bottom: 0;
     right: -100%;
     width: 100%;
@@ -361,7 +385,7 @@ footer{
     }
   }
   
-  .login-box a span:nth-child(4) {
+  .login-box button span:nth-child(4) {
     bottom: -100%;
     left: 0;
     width: 2px;
@@ -376,7 +400,5 @@ footer{
       bottom: -100%;
     }
     50%,100% {
-      bottom: 100%;
-    }
-  }
-
+      bottom:100%;
+    }}
