@@ -125,7 +125,18 @@ header nav a:hover {
   transition: .5s;
   height: 450px;
 }
-
+#localidad{
+  position: absolute;
+}
+#localidad:hover{
+  position: absolute;
+  margin-top: 20px;
+  font-size: 50px;
+  padding-bottom: 30%;
+    padding-top: 36%;
+    height: 11%;
+    background: rgba(0, 0, 0,.9);
+}
 footer{
     background-color: #6c3091;
 }
