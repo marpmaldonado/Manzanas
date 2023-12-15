@@ -1,7 +1,7 @@
 const express=require('express')
 const app=express()
 const mysql=require('mysql')
-const {insertar}=require("./solicitudes")
+const {insertar, eliminar }=require("./solicitudes")
 // import path from 'path'
 
 // const __dirname = path.resolve();
@@ -23,6 +23,13 @@ app.get("/Manzanas.html",(req,res)=>{
 })
 
 app.post("/insertar",(req,res)=>{
+    insertar(conex,data,(result)=>{
+        res.json(result)
+    })
+    
+})
+
+app.post("/eliminar",(req,res)=>{
     insertar(conex,data,(result)=>{
         res.json(result)
     })
