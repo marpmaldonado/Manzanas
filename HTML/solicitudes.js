@@ -1,7 +1,7 @@
 // Funcion del boton
 // document.getElementById('Boton_registrar').addEventListener('click', insertar)
 
-const mysql=require('mysql')
+const mysql=require('mysql2')
 //Crear
 function insertar(conex,data,callback){
     console.log(data.Nombre)
@@ -30,4 +30,4 @@ if(err)throw err; callback(result)
 
 
 
-module.exports={insertar, eliminar}
+module.exports=insertar
