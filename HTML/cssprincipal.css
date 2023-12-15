@@ -4,7 +4,7 @@
 body{background:#fffffA;}
 
 body{
-    background: url(../IMG/fondo2.avif);
+    background: url(/fondo2.avif);
     background-repeat: no-repeat;
      background-size: cover;  
 }
@@ -38,8 +38,9 @@ header .Titulo{
   width: 100px; */
   position: relative;
   /* width: 100%; */
-  margin-left: 180px;
+  /* margin-left: 180px; */
   /* height: 100px; */
+  text-align: center;
 }
 
 header nav {
@@ -79,7 +80,9 @@ header nav a:hover {
 .title{
     font-size: 2rem;
     padding: 10px;
+    text-align: center;
 }
+
 .paragraph{
     font-size: 1rem;
 }
