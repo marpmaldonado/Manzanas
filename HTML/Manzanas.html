@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./cssprincipal.css">
-    <script src="/app.js"></script>
-    <script src="/solicitudes.js"></script>
+    <script src="./app.js"></script>
+    <script src="./solicitudes.js"></script>
 
     <title>Document</title>
 </head>
@@ -21,8 +21,8 @@
                 <a href="./Servicios.html">Servicios</a>
                 <a href="./Establecimiento.html">Establecimientos</a>
                 <a href="./MujerCuidadora.html">MujerCuidadora</a>
-				<a href="./localidades.html">Ubicacion</a>
-				<a href="./Login.html">Login</a>
+				<a href="/localidades.html">Ubicacion</a>
+				<a href="/Login.html">Login</a>
 			</nav>
 		</div>
 	</header>
@@ -67,7 +67,7 @@
               <option value="Concordia">Concordia</option>
           </select>
           <br>
-            <button id="Boton_registrar" onclick="insertar({Nombre:'Nombre', Localidad:'Localidad',Dirección:'Dirección', Municipio:'Municipio'})">Agregar</button>
+            <button id="Boton_registrar" onclick="insertar(conex,{Nombre:'OP', Localidad:'Localidad',Dirección:'Dirección', Municipio:'Municipio'},callback)">Agregar</button>
             <span></span>
             <span></span>
             <span></span>

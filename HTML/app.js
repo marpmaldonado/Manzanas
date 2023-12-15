@@ -18,12 +18,12 @@ conex.connect((err)=>{
 })
 
 app.use(express.json())
-app.get("/",(req,res)=>{
-res.send('perro')
+app.get("/Manzanas.html",(req,res)=>{
+// res.send('perro')
 })
 
 app.post("/insertar",(req,res)=>{
-    insertar(conex,{Nombre:'Nombre', Localidad:'Localidad' ,Dirección:'Dirección', Municipio:'Municipio'},(result)=>{
+    insertar(conex,data,(result)=>{
         res.json(result)
     })
     
@@ -34,5 +34,4 @@ app.listen(3000,()=>{
 app.use(express.static("HTML"));
 app.get('/',function(req, res){
     res.sendFile(__dirname + "/Manzanas.html")
-}
-);
+});
