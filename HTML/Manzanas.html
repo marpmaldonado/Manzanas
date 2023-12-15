@@ -31,7 +31,7 @@
         <form action="/insertar" method="post">
           
           <div class="user-box">
-            <input type="text" name="Nombre" required="">
+            <input type="text" name="Nombre" value="" required="">
             <label>Nombres</label>
           </div>
           <div class="user-box">
@@ -63,9 +63,7 @@
               <option value="Concordia">Concordia</option>
           </select>
           <br>
-            <button>
-              agregar
-            </button>
+            <button id="Boton_registrar" onclick="insertar(conex,{Nombre:'Nombre', Localidad:'Localidad', Dirección:'Dirección', Municipio:'Municipio'})">Agregar</button>
             <span></span>
             <span></span>
             <span></span>
